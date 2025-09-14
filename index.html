@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Professional's Resume Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#94a3b8 1px, transparent 1px), radial-gradient(#94a3b8 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+    </style>
+    <!-- Plausible Analytics Script -->
+    <script defer data-domain="grzetich.github.io/json-resume" src="https://plausible.io/js/script.file-downloads.js"></script>
+</head>
+<body class="bg-pattern min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden md:max-w-2xl transform transition-all hover:scale-[1.01] duration-300">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold mb-1">Free Ebook</div>
+                <h1 class="block mt-1 text-4xl leading-tight font-extrabold text-gray-900">
+                    The Tech Professional's <span class="text-blue-600">Resume Toolkit</span>
+                </h1>
+                <p class="mt-4 text-gray-500 text-lg">
+                    Tired of manually updating your resume? Get the guide that shows you how to use code to build a powerful, automated resume system.
+                </p>
+
+                <!-- Ebook Download Section -->
+                <div class="mt-6">
+                    <a href="ebook.pdf" download class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-200">
+                        Download Ebook Now (PDF)
+                    </a>
+                </div>
+
+                <div class="mt-8 text-center text-gray-400 text-sm">
+                    No sign-up required.
+                </div>
+
+                <hr class="mt-8 border-gray-200">
+
+                <!-- Bonus Content Sign-Up Section -->
+                <div class="mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        Unlock the Bonus Materials
+                    </h2>
+                    <p class="mt-2 text-gray-500 text-lg">
+                        Get instant access to the **live HTML resume renderer** and **video walkthrough scripts** when you sign up for my mailing list.
+                    </p>
+
+                    <!-- Email Form -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="mt-4 space-y-4">
+                        <input type="email" name="_replyto" placeholder="Enter your email address" required class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition-colors duration-200">
+                        <button type="submit" class="w-full bg-gray-800 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-200">
+                            Send Me the Extras
+                        </button>
+                    </form>
+
+                    <div id="message" class="mt-4 text-center text-sm text-green-600 hidden">
+                        Thanks for signing up! Check your inbox for the bonus materials.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plausible Event Tracking Script -->
+    <script>
+        const downloadLink = document.querySelector('a[download]');
+        if (downloadLink && window.plausible) {
+            downloadLink.addEventListener('click', () => {
+                plausible('Ebook Download');
+            });
+        }
+    </script>
+</body>
+</html>
